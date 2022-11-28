@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --default-color: rgb(120, 84, 237);
+    --border-radius: 10px;
+    --transition: 0.23s;
+}
+
+.none {
+    display: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+#menuJs {
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    background: white;
+}
+
+#search{
+    resize: none;
+    text-align: center;
+
+    border-color: var(--default-color);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--default-color);
+}
+
+#closeJs{
+    font-size: 2rem;
+    margin-bottom: .2rem;
+}
+
+#closeJs:hover{
+    color: var(--default-color);
+    cursor: pointer;
+}
+
+.transparence{
+    width: 100%;
+    height: calc(100vh - 13.7rem - 60px);
+    opacity: 0.6;
+
+    position: absolute;
+    top: 100%;
+    background-color: black;
+}
+
+/* Pop */
+
+header .pop{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+
+    background-color: #a0c4f4;
+}
+
+header .pop p{
+    text-decoration: none;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+header .pop h3 a{
+    text-decoration: none;
+    text-align: center;
+
+    color: black;
+}
+
+/* Pop End */
+
+/* Navbar */
+
+header .navbar .openclassroom{
+    width: 15rem;
+}
+
+header .navbar {
+    height: 3.7rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+header .navbar .left ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    margin: 0;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+header .navbar .left ul li{
+    margin-left: 2rem;
+}
+
+header .navbar .left ul li a{
+    text-decoration: none;
+
+    color: black;
+}
+
+header .navbar .left ul li a:hover{
+    text-decoration: none;
+    color: var(--default-color);
+    cursor: pointer;
+}
+
+header .line{
+    width: 1px;
+    height: 2rem;
+
+    margin-left: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+header .navbar .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar .right .searchIcon{
+    font-size: 30px;
+    font-weight: bolder;
+
+    margin-right: auto;
+
+    color: black;
+}
+
+
+header .navbar .right .searchIcon:hover{
+    color: var(--default-color);
+}
+
+
+header .navbar .right .loginButton{
+    width: 10rem;
+    height: 2.5rem;
+
+    margin-left: 2rem;
+
+    border: 1px solid var(--default-color);
+
+    border-radius: var(--border-radius);
+
+    color: var(--default-color);
+    background-color: white;
+}
+
+header .navbar .loginButton:hover{
+    transition: var(--transition);
+    background-color: rgb(120, 84, 236, 0.5);
+}
+
+header .navbar .loginButton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--default-color);
+}
+
+/* Navbar End */
+
+/* Container */
+
+/* First Section */
+
+.container .firstSection{
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: white;
+    background-color: var(--default-color);
+}
+
+.container .firstSection .left{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .firstSection .left h1{
+    margin-top: 8rem;
+    font-size: 40px;
+}
+
+
+.container .firstSection .left .firstSectionButtons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+}
+
+.container .firstSection .left .firstSectionButtons .leftButton{
+    width: 13rem;
+    height: 2.5rem;
+
+    border-radius: var(--border-radius);
+
+    font-weight: bold;
+    color: var(--default-color);
+    background-color: white;
+}
+
+.container .firstSection .left .firstSectionButtons .leftButton:hover{
+    transition: var(--transition);
+    box-shadow: 1px 2px 10px black;
+    cursor: pointer;
+}
+
+.container .firstSection .left .firstSectionButtons .leftButton p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.container .firstSection .left .firstSectionButtons .rightButton{
+    width: 13rem;
+    height: 2.5rem;
+
+    border: 1px solid white;
+    border-radius: var(--border-radius);
+
+    font-weight: bold;
+    color: white;
+    background-color: var(--default-color);
+}
+
+.container .firstSection .left .firstSectionButtons .rightButton:hover{
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.container .firstSection .left .firstSectionButtons .rightButton p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+
+/* First Section End */
+
+/* Second Section */
+
+.container .secondSection{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 65%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+.container .secondSection div{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+.container .secondSection h1{
+    font-size: 20px;
+}
+
+.container .secondSection p{
+    opacity: 0.8;
+}
+
+/* Second Section End */
+
+/* Third Section */
+
+.container .thirdSection{
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fffcec;
+}
+
+.container .thirdSection .left{
+    width: 500px;
+}
+
+.container .thirdSection .left a{
+    color: black;
+}
+
+.container .thirdSection .left a:hover{
+    text-decoration: none;
+}
+
+.container .thirdSection .left h1{
+    width: fit-content;
+
+    text-align: center;
+    font-weight: bold;
+    padding:  0 0.5rem;
+
+    background-color: rgba(120, 84, 237, 0.8);
+    color: #fffcec;
+}
+
+.container .thirdSection .left p{
+    opacity: 0.8;
+}
+
+.container .thirdSection .video{
+    margin-left: 4rem;
+}
+
+
+/* Third Section End */
+
+/* Fourth Section */
+
+.container .fourthSection{
+    margin-top: 2.5%;
+}
+
+.container .fourthSection h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+.container .fourthSection .content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container .fourthSection .content img{
+    width: 350px;
+    height: 300px;
+}
+
+.container .fourthSection .content .infos{
+    width: 550px;
+    margin-left: 1.2rem;
+}
+
+.container .fourthSection .content .infos p{
+    margin: 0;
+
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.container .fourthSection .content .infos h3{
+    display: block;
+    font-size: 16px;
+}
+
+.container .fourthSection .content .infos .space{
+    display: block;
+}
+
+.container .fourthSection .content .infos .watchVideo{
+    width: 10rem;
+    height: 2.5rem;
+
+    margin-top: 1em;
+
+    border: 1px solid white;
+
+    border-radius: var(--border-radius);
+
+    color: var(--default-color);
+    background-color: white;
+}
+
+.container .fourthSection .content .infos .watchVideo:hover{
+    transition: var(--transition);
+    background-color: rgb(120, 84, 236, 0.5);
+}
+
+.container .fourthSection .content .infos .watchVideo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    text-decoration: none;
+    color: var(--default-color);
+}
+
+.container .fourthSection .points{
+    display: flex;
+    justify-content: space-between;
+    max-width: 4%;
+    margin-top: 4rem;
+    margin: auto;
+}
+
+.container .fourthSection .points .point{
+    width:  7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: rgba(119, 84, 236, 0.322);
+}
+
+.container .fourthSection .points .active{
+    background-color: var(--default-color);
+}
+
+/* Fourth Section End */
+
+/* Fifth Section */
+
+.container .fifthSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 6%;
+    margin-bottom: 5rem;
+}
+
+.container .fifthSection h1{
+    font-size: 24px;
+}
+
+.container .fifthSection .infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+.container .fifthSection .infos p{
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.container .fifthSection .infos .contact{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 45%;
+}
+
+.container .fifthSection .infos .contact .mail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .fifthSection .infos .contact .mail .mail-icon{
+    font-size: 20px;
+    color: var(--default-color);
+}
+
+.container .fifthSection .infos .contact .phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .fifthSection .infos .contact .phone .phone-icon{
+    font-size: 20px;
+    color: var(--default-color);
+}
+
+
+.container .fifthSection .infos .contact a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+
+    color: var(--default-color);
+}
+
+.container .fifthSection .infos .line{
+    width: 1px;
+    height: 1.5rem;
+
+    background-color: var(--default-color);
+}
+
+/* Fifth Section End */
+
+/* Footer */
+
+footer .terms{
+    color: rgba(0, 0, 0, 0.61);
+}
+
+footer .terms p{
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .terms a{
+    color: black;
+}
+
+footer .terms a:hover{
+    color: var(--default-color);
+}
+
+.globalLine{
+    width: 100%;
+    height: 0.25px;
+
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+footer .footer{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+
+footer .footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer ul li{
+    margin: 0 0 30px 0;
+}
+
+footer .footer h3{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.76);
+}
+ 
+footer .footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+footer .footer a:hover{
+    color: var(--default-color);
+}
+
+/* Footer End */
+
+/* Container End */
+
+@media screen and (max-width: 1150px) {
+    .secondSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstSectionButtons{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .leftButton{
+        margin-bottom: 1.5rem;
+    }
+
+    .container .firstSection .left{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    header .navbar .loginButton{
+        display: none;
+    }
+
+    header .navbar .line{
+        display: none;
+    }
+
+    .container .fifthSection{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container .thirdSection{
+        flex-direction: column;
+        height: 38rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container .firstSection .left h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    header .navbar .left .list{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header .navbar .left .list{
+        color: black;
+        font-size: 2rem;
+        margin-right: 3rem;
+    }
+
+    header .navbar .left ul li{
+        display: none;
+    }
+
+    .container .firstSection {
+        flex-direction: column;
+        align-items: center;
+
+        height: 40rem;
+    }
+
+    .container .firstSection .homeBanner {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    footer .footer {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 808px) {
+    .container .firstSection .homeBanner {
+        width: 16.8rem;
+    }
+}
+
+
+@media screen and (max-width: 725px) {
+    header .navbar ul h1{
+        display: none;
+    }
+
+    .container .firstSection .left h1{
+        font-size: 30px;
+    }
+
+    .container .fourthSection .points{
+        margin-left: 20rem;
+    }
+
+    .container .fourthSection .content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .fourthSection .content img{
+        margin-left: 10.5rem;
+    }
+
+    .container .fourthSection .content .infos p{
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    .container .fourthSection .content .infos h3{
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    .container .fourthSection .content .infos .watchVideo{
+        margin-left: 14.5rem;
+    }
+
+    .container .firstSection .homeBanner {
+        width: 17.3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container .fifthSection .infos .contact .mail a{
+        display: none;
+    }
+
+    .container .fifthSection .infos .contact .phone a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    header .pop{
+        display: none;
+    }
+
+    .container .firstSection .left h1{
+        font-size: 25px;
+    }
+
+    .container .firstSection .left p{
+        font-size: 16px;
+    }
+    
+    .container .firstSection .left .firstSectionButtons .leftButton p{
+        font-size: 1rem;
+    }
+    .container .firstSection .left .firstSectionButtons .rightButton p{
+        font-size: 1rem;
+    }
+
+    .container .firstSection .homeBanner {
+        width: 17.9rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .container .firstSection .homeBanner {
+        width: 16.7rem;
+    }
+
+    header .navbar .left a .openclassroom{
+        width: 10rem;
+    }
+
+    header .navbar .left .list{
+        font-size: 1.5rem;
+    }
+
+    header .navbar .right .searchIcon{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .container .firstSection .homeBanner {
+        width: 16.6rem;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .container .firstSection .homeBanner {
+        width: 14.8rem;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .container .firstSection .homeBanner {
+        width: 13.6rem;
+    }
+}
+
+@media screen and (max-width: 292px) {
+    .container .firstSection .homeBanner {
+        width: 12.2rem;
+    }
+}

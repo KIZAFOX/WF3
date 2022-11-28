@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+.rectangle{
+    width: 100%;
+    height: 100%;
+
+    background-color: blue;
+}
+
+.title{
+    font-size: 5rem;
+    color: red;
+}
+
+.birdImage{
+    width: 350px;
+    height: 350px;
+
+    float: left;
+    margin-top: 5rem;
+    border-radius: 15%;
+}
+
+.text{
+    color: gray;
+    margin-top: 15rem;
+}

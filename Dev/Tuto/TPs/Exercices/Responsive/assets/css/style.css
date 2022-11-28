@@ -1,0 +1,311 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+.header {    
+    height: 800px;
+    color: #FFF;
+    background-color: #472F88;
+}
+
+.container {
+
+    max-width: 950px;
+    margin: auto;
+    padding: 0 20px;
+    padding-top: 200px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn {
+    background-color: #FFF;
+    text-decoration: none;
+    padding: 13px 40px;
+    border-radius: 9px;
+    color: #472F88;
+
+    display: inline-block;
+    margin-top: 30px;
+}
+
+main.container{
+    padding-top: 100px;
+}
+
+.informations{
+    display: flex;
+    
+    text-align: center;
+}
+
+.information img{
+    width: 144px;
+    height: 121px;
+}
+
+
+.information h3{
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.line{
+    width: 102px;
+    height: 10px;
+
+    border-radius: 9px;
+
+    background-color: #472F88;
+}
+
+.components{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding-top: 100px;
+    margin-bottom: 10rem;
+}
+
+.component{
+    width: 325px;
+    height: 340px;
+
+    border-radius: 5px;
+
+    font-size: 1.77rem;
+
+    position: relative;
+
+    color: white;
+    background-color: #472F88;
+}
+
+.component img{
+    width: 325px;
+    height: 340px;
+
+    border-radius: 5px;
+
+    z-index: 1;
+
+    opacity: 0.7;
+}
+
+.component h3{
+    width: 240px;
+    height: 202px;
+
+    text-align: center;
+    
+    top: 5.5rem;
+    left: 3rem;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.component img{
+    opacity: 0.7;
+}
+
+.footer {
+    height: 250px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    
+    color: white;
+    background-color: #472F88;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .images{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1130px) {
+    .components{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .components{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10rem;
+    }
+
+    .footer{
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .informations {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .components{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .components{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .components{
+        margin-left: .6rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .components{
+        margin-left: .1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .components{
+        margin-left: -0.6rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .btn{
+        padding: 13px 100px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .btn{
+        padding: 13px 90px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn{
+        padding: 13px 80px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .btn{
+        padding: 13px 70px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .btn{
+        padding: 13px 60px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .btn{
+        padding: 13px 50px;
+    }
+}

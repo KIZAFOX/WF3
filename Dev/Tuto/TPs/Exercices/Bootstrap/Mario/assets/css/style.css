@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(173, 226, 226);
+}
+
+.bg-brown{
+    background-color: #8a470d;
+}
+
+.void{
+    opacity: 0;
+}
+
+.bg-bold-brown{
+    background-color: #582900;
+}
+
+.bg-yellow{
+    background-color: #e6d00de1;
+}
+
+.row{
+    width: 40rem;
+    height: 3rem;
+}
